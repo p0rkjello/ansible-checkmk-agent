@@ -3,9 +3,6 @@
   hosts: all
   become: true
 
-  collections:
-    - tribe29.checkmk
-
   roles:
     - tribe29.checkmk.agent
     
