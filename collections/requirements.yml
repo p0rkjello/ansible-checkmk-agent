@@ -1,3 +1,4 @@
 ---
 collections:
-- tribe29.checkmk
+- name: tribe29.checkmk
+- name: ansible.utils
