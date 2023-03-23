@@ -7,6 +7,8 @@
     - name: pip install netaddr (really disagree how red hat manage their products...). Either I do this or create a custom Execution Enviroment....
       ansible.builtin.shell: pip install netaddr
       delegate_to: 127.0.0.1
+      become: yes
+      become_method: su
   
   roles:
     - tribe29.checkmk.agent
